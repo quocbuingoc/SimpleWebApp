@@ -19,7 +19,7 @@ import bnq.simplewebapp.conn.ConnectionUtils;
 import bnq.simplewebapp.utils.MyUtils;
 
 @WebFilter(filterName = "jdbcFilter", urlPatterns = { "/*" })
-public class JDBCFilter {
+public class JDBCFilter implements Filter{
 	public JDBCFilter() {
 	}
 
@@ -33,7 +33,6 @@ public class JDBCFilter {
 
 	}
 
-	@Override
 	private boolean needJDBC(HttpServletRequest request) {
 		System.out.println("JDBC Filter");
 		String servletPath = request.getServletPath();

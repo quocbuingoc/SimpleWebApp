@@ -2,3 +2,4 @@ eclipse.preferences.version=1
 encoding//src/bnq/simplewebapp/filter/CookieFilter.java=UTF-8
 encoding//src/bnq/simplewebapp/filter/JDBCFilter.java=UTF-8
 encoding//src/bnq/simplewebapp/servlet/HomeServlet.java=UTF-8
+encoding/<project>=UTF-8

@@ -2,6 +2,7 @@ package bnq.simplewebapp.filter;
 
 import java.io.IOException;
 
+import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
@@ -10,14 +11,16 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 
 @WebFilter(filterName = "encodingFilter", urlPatterns = { "/*" })
-public class EncodingFilter {
+public class EncodingFilter implements Filter{
 	public EncodingFilter() {
 	}
 
+	@Override
 	public void init(FilterConfig fConfig) throws ServletException {
 
 	}
 
+	@Override
 	public void destroy() {
 
 	}
