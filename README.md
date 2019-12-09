@@ -1,2 +1,2 @@
 # SimpleWebApp
-make a simple web application with Javax Servlet
+Making a simple web application with Javax Servlet
